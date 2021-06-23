@@ -6,6 +6,8 @@
 #include <optional>
 #include <queue>
 
+namespace jdi {
+
 template <class T> //
 class block_queue {
 private:
@@ -51,5 +53,7 @@ public:
     return std::make_optional(r);
   }
 };
+
+} // namespace jdi
 
 #endif /* _BLOCK_QUEUE_HPP_ */
